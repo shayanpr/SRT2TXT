@@ -1,0 +1,1068 @@
+ 
+
+I'll go here is a procedural wood
+
+ 
+I'll go here is a procedural wood
+ 
+
+ 
+I'll go here is a procedural wood
+texture it's sad
+
+ 
+texture it's sad
+ 
+
+ 
+texture it's sad
+they've already parameters and outputs
+
+ 
+they've already parameters and outputs
+ 
+
+ 
+they've already parameters and outputs
+something resembles work so you can get
+
+ 
+something resembles work so you can get
+ 
+
+ 
+something resembles work so you can get
+some different results from the same
+
+ 
+some different results from the same
+ 
+
+ 
+some different results from the same
+thing this is all from the same material
+
+ 
+thing this is all from the same material
+ 
+
+ 
+thing this is all from the same material
+just with a few different numbers
+
+ 
+just with a few different numbers
+ 
+
+ 
+just with a few different numbers
+[Music]
+
+ 
+[Music]
+ 
+
+ 
+[Music]
+the problem is that this can be quite
+
+ 
+the problem is that this can be quite
+ 
+
+ 
+the problem is that this can be quite
+heavy on your on no tree right these
+
+ 
+heavy on your on no tree right these
+ 
+
+ 
+heavy on your on no tree right these
+these groups are really complex
+
+ 
+these groups are really complex
+ 
+
+ 
+these groups are really complex
+two of them
+
+ 
+two of them
+ 
+
+ 
+two of them
+you
+
+ 
+you
+ 
+
+ 
+you
+what you really want to be able to do is
+
+ 
+what you really want to be able to do is
+ 
+
+ 
+what you really want to be able to do is
+bake onto a single texture baking in
+
+ 
+bake onto a single texture baking in
+ 
+
+ 
+bake onto a single texture baking in
+blender is notoriously slow I'm just
+
+ 
+blender is notoriously slow I'm just
+ 
+
+ 
+blender is notoriously slow I'm just
+going to show you a few quick settings
+
+ 
+going to show you a few quick settings
+ 
+
+ 
+going to show you a few quick settings
+just to make it go as quickly as it can
+
+ 
+just to make it go as quickly as it can
+ 
+
+ 
+just to make it go as quickly as it can
+do so first of all what we can do is
+
+ 
+do so first of all what we can do is
+ 
+
+ 
+do so first of all what we can do is
+we're going to use the power materialize
+
+ 
+we're going to use the power materialize
+ 
+
+ 
+we're going to use the power materialize
+we want and then we're going to add
+
+ 
+we want and then we're going to add
+ 
+
+ 
+we want and then we're going to add
+shift a add an image texture
+
+ 
+
+ 
+
+ 
+
+then in here it was gonna set new and
+
+ 
+then in here it was gonna set new and
+ 
+
+ 
+then in here it was gonna set new and
+call it defuse now you can set this
+
+ 
+call it defuse now you can set this
+ 
+
+ 
+call it defuse now you can set this
+resolution to whatever you want I'm just
+
+ 
+resolution to whatever you want I'm just
+ 
+
+ 
+resolution to whatever you want I'm just
+going to leave it as 1024 and turn off
+
+ 
+going to leave it as 1024 and turn off
+ 
+
+ 
+going to leave it as 1024 and turn off
+alpha because that's extra information
+
+ 
+alpha because that's extra information
+ 
+
+ 
+alpha because that's extra information
+we don't need this is going to be an
+
+ 
+we don't need this is going to be an
+ 
+
+ 
+we don't need this is going to be an
+opaque image all the way across so turn
+
+ 
+opaque image all the way across so turn
+ 
+
+ 
+opaque image all the way across so turn
+off alpha I'm going to hit okay
+
+ 
+off alpha I'm going to hit okay
+ 
+
+ 
+off alpha I'm going to hit okay
+now in my UV editor I'm going to hit
+
+ 
+now in my UV editor I'm going to hit
+ 
+
+ 
+now in my UV editor I'm going to hit
+this drop-down and select the diffuse
+
+ 
+this drop-down and select the diffuse
+ 
+
+ 
+this drop-down and select the diffuse
+that we just made
+
+ 
+
+ 
+
+ 
+
+right now is just a
+
+ 
+
+ 
+
+ 
+
+nothing is no information stored there
+
+ 
+nothing is no information stored there
+ 
+
+ 
+nothing is no information stored there
+so with it selected in the UV editor
+
+ 
+so with it selected in the UV editor
+ 
+
+ 
+so with it selected in the UV editor
+make sure this node is selected doesn't
+
+ 
+make sure this node is selected doesn't
+ 
+
+ 
+make sure this node is selected doesn't
+need to be plugged into anything we're
+
+ 
+need to be plugged into anything we're
+ 
+
+ 
+need to be plugged into anything we're
+going to go into our render panel here
+
+ 
+going to go into our render panel here
+ 
+
+ 
+going to go into our render panel here
+making sure the cycles is selected we
+
+ 
+making sure the cycles is selected we
+ 
+
+ 
+making sure the cycles is selected we
+can go down to the bake settings and
+
+ 
+can go down to the bake settings and
+ 
+
+ 
+can go down to the bake settings and
+first of all we're going to select
+
+ 
+first of all we're going to select
+ 
+
+ 
+first of all we're going to select
+diffuse I'm going to turn off indirect
+
+ 
+diffuse I'm going to turn off indirect
+ 
+
+ 
+diffuse I'm going to turn off indirect
+and direct so it's just recording the
+
+ 
+and direct so it's just recording the
+ 
+
+ 
+and direct so it's just recording the
+color information
+
+ 
+color information
+ 
+
+ 
+color information
+underperformance this is a really big
+
+ 
+underperformance this is a really big
+ 
+
+ 
+underperformance this is a really big
+one you need to set the tile size to be
+
+ 
+one you need to set the tile size to be
+ 
+
+ 
+one you need to set the tile size to be
+the exact resolution of your baked image
+
+ 
+the exact resolution of your baked image
+ 
+
+ 
+the exact resolution of your baked image
+so in this case a 1024 by 1024 this
+
+ 
+
+ 
+
+ 
+
+this thing is going to speed up your
+
+ 
+this thing is going to speed up your
+ 
+
+ 
+this thing is going to speed up your
+bank then in the the the passes you
+
+ 
+bank then in the the the passes you
+ 
+
+ 
+bank then in the the the passes you
+might think that you want a really high
+
+ 
+might think that you want a really high
+ 
+
+ 
+might think that you want a really high
+one to get a smooth image but honestly
+
+ 
+one to get a smooth image but honestly
+ 
+
+ 
+one to get a smooth image but honestly
+can set it to 16 and you're not going to
+
+ 
+can set it to 16 and you're not going to
+ 
+
+ 
+can set it to 16 and you're not going to
+know as much difference so
+
+ 
+know as much difference so
+ 
+
+ 
+know as much difference so
+really all there is to it 16 in the
+
+ 
+really all there is to it 16 in the
+ 
+
+ 
+really all there is to it 16 in the
+render passes
+
+ 
+render passes
+ 
+
+ 
+render passes
+your image size in pixels field trial
+
+ 
+your image size in pixels field trial
+ 
+
+ 
+your image size in pixels field trial
+size then just select whichever map it
+
+ 
+size then just select whichever map it
+ 
+
+ 
+size then just select whichever map it
+is that you're doing for there and then
+
+ 
+is that you're doing for there and then
+ 
+
+ 
+is that you're doing for there and then
+hit bake
+
+ 
+
+ 
+
+ 
+
+also make sure that you have your your
+
+ 
+also make sure that you have your your
+ 
+
+ 
+also make sure that you have your your
+object selected that you're gonna bait
+
+ 
+object selected that you're gonna bait
+ 
+
+ 
+object selected that you're gonna bait
+from otherwise you'll get an error down
+
+ 
+from otherwise you'll get an error down
+ 
+
+ 
+from otherwise you'll get an error down
+here baked
+
+ 
+here baked
+ 
+
+ 
+here baked
+sit here and texture break so this is
+
+ 
+sit here and texture break so this is
+ 
+
+ 
+sit here and texture break so this is
+going to take a little while I will come
+
+ 
+going to take a little while I will come
+ 
+
+ 
+going to take a little while I will come
+back when it's done
+
+ 
+
+ 
+
+ 
+
+you
+
+ 
+
+ 
+
+ 
+
+rend it you can see here we've got our
+
+ 
+rend it you can see here we've got our
+ 
+
+ 
+rend it you can see here we've got our
+diffuse it's not
+
+ 
+diffuse it's not
+ 
+
+ 
+diffuse it's not
+highest rise it's only 1024
+
+ 
+highest rise it's only 1024
+ 
+
+ 
+highest rise it's only 1024
+now really important you remember to do
+
+ 
+now really important you remember to do
+ 
+
+ 
+now really important you remember to do
+this this is not saved this is only
+
+ 
+this this is not saved this is only
+ 
+
+ 
+this this is not saved this is only
+cached okay image in your UV editor
+
+ 
+cached okay image in your UV editor
+ 
+
+ 
+cached okay image in your UV editor
+image save as and then just wherever
+
+ 
+image save as and then just wherever
+ 
+
+ 
+image save as and then just wherever
+save it
+
+ 
+
+ 
+
+ 
+
+you
+
+ 
+
+ 
+
+ 
+
+this month a new material
+
+ 
+this month a new material
+ 
+
+ 
+this month a new material
+Oh psdf we're going to swing into evey
+
+ 
+Oh psdf we're going to swing into evey
+ 
+
+ 
+Oh psdf we're going to swing into evey
+creepy
+
+ 
+creepy
+ 
+
+ 
+creepy
+so that we can see what's going on I'm
+
+ 
+so that we can see what's going on I'm
+ 
+
+ 
+so that we can see what's going on I'm
+gonna add my image textures now
+
+ 
+
+ 
+
+ 
+
+defuse
+
+ 
+
+ 
+
+ 
+
+breathless
+
+ 
+breathless
+ 
+
+ 
+breathless
+and no more
+
+ 
+
+ 
+
+ 
+
+control-t I put the node Wrangler ad on
+
+ 
+control-t I put the node Wrangler ad on
+ 
+
+ 
+control-t I put the node Wrangler ad on
+switched on
+
+ 
+
+ 
+
+ 
+
+respect is the same
+
+ 
+
+ 
+
+ 
+
+a new vector normal okay so in fact a
+
+ 
+a new vector normal okay so in fact a
+ 
+
+ 
+a new vector normal okay so in fact a
+normal map the color up from the normal
+
+ 
+normal map the color up from the normal
+ 
+
+ 
+normal map the color up from the normal
+into the color here I'm gonna set this
+
+ 
+into the color here I'm gonna set this
+ 
+
+ 
+into the color here I'm gonna set this
+to blender object space which seems to
+
+ 
+to blender object space which seems to
+ 
+
+ 
+to blender object space which seems to
+work better for me honestly that's
+
+ 
+work better for me honestly that's
+ 
+
+ 
+work better for me honestly that's
+normal
+
+ 
+
+ 
+
+ 
+
+I'm gonna drop that down
+
+ 
+I'm gonna drop that down
+ 
+
+ 
+I'm gonna drop that down
+point one what's better and then I'm
+
+ 
+point one what's better and then I'm
+ 
+
+ 
+point one what's better and then I'm
+gonna hit the roughness
+
+ 
+gonna hit the roughness
+ 
+
+ 
+gonna hit the roughness
+you
+
+ 
+
+ 
+
+ 
+
+as you can see we've already got just
+
+ 
+as you can see we've already got just
+ 
+
+ 
+as you can see we've already got just
+roughness Shang 3 and then the basecoat
+
+ 
+roughness Shang 3 and then the basecoat
+ 
+
+ 
+roughness Shang 3 and then the basecoat
+gazing of course
+
+ 
+gazing of course
+ 
+
+ 
+gazing of course
+there we go that is
+
+ 
+
+ 
+
+ 
+
+basically how you
+
+ 
+basically how you
+ 
+
+ 
+basically how you
+a fake from
+
+ 
+
+ 
+
+ 
+
+or any of your objects
+
+ 
+
+ 
+
+ 
+
+one
+
+ 
+one
+ 
+
+ 
+one
+CP useful because I can now get live
+
+ 
+CP useful because I can now get live
+ 
+
+ 
+CP useful because I can now get live
+feedback using a scene it's very
+
+ 
+feedback using a scene it's very
+ 
+
+ 
+feedback using a scene it's very
+lightweight this is a very small quick
+
+ 
+lightweight this is a very small quick
+ 
+
+ 
+lightweight this is a very small quick
+thing for easy to handle or four cycles
+
+ 
+thing for easy to handle or four cycles
+ 
+
+ 
+thing for easy to handle or four cycles
+to handle
+
+ 
+to handle
+ 
+
+ 
+to handle
+and
+
+ 
+and
+ 
+
+ 
+and
+that Cyprus lady
+
+ 
+
+ 
+
+ 
+
+this is going through samples a little
+
+ 
+this is going through samples a little
+ 
+
+ 
+this is going through samples a little
+bit
+
+ 
+bit
+ 
+
+ 
+bit
+quite slow computer but this is demon on
+
+ 
+quite slow computer but this is demon on
+ 
+
+ 
+quite slow computer but this is demon on
+three and if we were to switch back to
+
+ 
+three and if we were to switch back to
+ 
+
+ 
+three and if we were to switch back to
+the original one
+
+ 
+
+ 
+
+ 
+
+you can see that it looks to all intents
+
+ 
+you can see that it looks to all intents
+ 
+
+ 
+you can see that it looks to all intents
+and purposes exactly the same
+
+ 
+
+ 
+
+ 
+
+because of the node setup being so heavy
+
+ 
+because of the node setup being so heavy
+ 
+
+ 
+because of the node setup being so heavy
+cannot actually be rendered with EVR to
+
+ 
+cannot actually be rendered with EVR to
+ 
+
+ 
+cannot actually be rendered with EVR to
+show you that
+
+ 
+
+ 
+
+ 
+
+as you can see we've got a just magenta
+
+ 
+as you can see we've got a just magenta
+ 
+
+ 
+as you can see we've got a just magenta
+which is Glenda's way of saying cannot
+
+ 
+which is Glenda's way of saying cannot
+ 
+
+ 
+which is Glenda's way of saying cannot
+display or nothing to display and
+
+ 
+
+ 
+
+ 
+
+switch back to the new one
+
+ 
+
+ 
+
+ 
+
+is
+
+ 
+
+ 
+
+ 
+
+great that's that's what we want
+
+ 
+
+ 
+
+ 
+
+so hope that's helped somebody just to
+
+ 
+so hope that's helped somebody just to
+ 
+
+ 
+so hope that's helped somebody just to
+recap check your tire size is the same
+
+ 
+recap check your tire size is the same
+ 
+
+ 
+recap check your tire size is the same
+as your image size drop your render
+
+ 
+as your image size drop your render
+ 
+
+ 
+as your image size drop your render
+passes right down and then just hit bake
+

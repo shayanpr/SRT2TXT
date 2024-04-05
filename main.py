@@ -5,7 +5,25 @@ def timeStampRemover(srt : str):
 
     #timestampPattern = re.compile(r"(\d{2}:\d{2}:\d{2},\d{3}) --> (\d{2}:\d{2}:\d{2},\d{3})")
     timestampPattern = re.compile(r'\d+\n\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}')
-    return re.sub(timestampPattern, " ", srt)
+    stampRemoved = re.sub(timestampPattern, " ", srt)
+    stampRemoved = stampRemoved.splitlines()
+    pruned = ""
+    for i, line in enumerate(stampRemoved):
+        print(line)
+        for j in range(i+1, i + min(10, len(stampRemoved)-1 -i)):
+            if line == stampRemoved[j] :
+                print(line)
+                line = "\n"
+        pruned = pruned + line
+    final = "" 
+    pruned = pruned.splitlines()
+    for line in pruned:
+        if line =="\n" or line =="" or line == " ":
+            pass
+        else:
+            final += line + "\n"
+        
+    return final 
 
 
 def srt2txt(srt_path, txt_path):
@@ -14,29 +32,7 @@ def srt2txt(srt_path, txt_path):
     """
     with open(srt_path, "r") as srt_file:
         with open(txt_path, "w") as txt_file:
-            stampRemoved = timeStampRemover(srt_file.read())
-            pruned = ""
-            
-            for i, line in enumerate(stampRemoved.splitlines()):
-                print(line)
-                for j in range(i+1, i + min(10, len(stampRemoved.splitlines())-1 -i)):
-                    if line == stampRemoved.splitlines()[j] :
-                        print(line)
-                        line = "\n"
-                pruned = pruned + line
-            final = "" 
-            for line in pruned.splitlines():
-                if line =="\n" or line =="" or line == " ":
-                    pass
-                else:
-                    final += line + "\n"
-                    
-            # stampRemoved = pruned
-            # for i, line in enumerate(stampRemoved.splitlines()):
-            #     if line == "\n" and stampRemoved.splitlines()[max(i + 1, len(stampRemoved))-1] == "\n":
-            #         line = "*********"
-
-            #     pruned = pruned + line
+            final = timeStampRemover(srt_file.read())
             txt_file.write(final)
 
 def main():

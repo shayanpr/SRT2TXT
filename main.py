@@ -1,5 +1,5 @@
 import re
-
+import os
 
 def timeStampRemover(srt : str):
 
@@ -35,8 +35,15 @@ def srt2txt(srt_path, txt_path):
             final = timeStampRemover(srt_file.read())
             txt_file.write(final)
 
+
+def ProcessFolder(path_to_folder):
+    for file in os.listdir(path_to_folder):
+        if file.endswith(".srt"):
+            srt2txt(path_to_folder + file, path_to_folder + file[:-4] + ".txt")
+
 def main():
-    srt2txt("./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.srt", "./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.txt")
+    #srt2txt("./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.srt", "./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.txt")
+    ProcessFolder("./")
 
     
 

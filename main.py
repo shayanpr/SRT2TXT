@@ -36,14 +36,19 @@ def srt2txt(srt_path, txt_path):
             txt_file.write(final)
 
 
-def ProcessFolder(path_to_folder):
+def ProcessFolder(path_to_folder, path_to_destination=None):
+    
+    if path_to_destination is None:
+        path_to_destination = path_to_folder
+    if not os.path.exists(path_to_destination):
+        os.makedirs(path_to_destination)
     for file in os.listdir(path_to_folder):
         if file.endswith(".srt"):
-            srt2txt(path_to_folder + file, path_to_folder + file[:-4] + ".txt")
+            srt2txt(os.path.join(path_to_folder , file), os.path.join(path_to_destination , file[:-4] + ".txt"))
 
 def main():
     #srt2txt("./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.srt", "./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.txt")
-    ProcessFolder("./")
+    ProcessFolder("./",'./Processed')
 
     
 

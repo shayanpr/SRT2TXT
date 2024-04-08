@@ -1,17 +1,17 @@
 import re
 import os
 
-def timeStampRemover(srt : str):
+def time_stamp_remover(srt : str):
 
-    #timestampPattern = re.compile(r"(\d{2}:\d{2}:\d{2},\d{3}) --> (\d{2}:\d{2}:\d{2},\d{3})")
-    timestampPattern = re.compile(r'\d+\n\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}')
-    stampRemoved = re.sub(timestampPattern, " ", srt)
-    stampRemoved = stampRemoved.splitlines()
+    #time_stamp_pattern = re.compile(r"(\d{2}:\d{2}:\d{2},\d{3}) --> (\d{2}:\d{2}:\d{2},\d{3})")
+    time_stamp_pattern = re.compile(r'\d+\n\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}')
+    stamp_removed = re.sub(time_stamp_pattern, " ", srt)
+    stamp_removed = stamp_removed.splitlines()
     pruned = ""
-    for i, line in enumerate(stampRemoved):
+    for i, line in enumerate(stamp_removed):
         print(line)
-        for j in range(i+1, i + min(10, len(stampRemoved)-1 -i)):
-            if line == stampRemoved[j] :
+        for j in range(i+1, i + min(10, len(stamp_removed)-1 -i)):
+            if line == stamp_removed[j] :
                 print(line)
                 line = "\n"
         pruned = pruned + line
@@ -32,11 +32,11 @@ def srt2txt(srt_path, txt_path):
     """
     with open(srt_path, "r") as srt_file:
         with open(txt_path, "w") as txt_file:
-            final = timeStampRemover(srt_file.read())
+            final = time_stamp_remover(srt_file.read())
             txt_file.write(final)
 
 
-def ProcessFolder(path_to_folder, path_to_destination=None):
+def process_folder(path_to_folder, path_to_destination=None):
     
     if path_to_destination is None:
         path_to_destination = path_to_folder
@@ -48,7 +48,7 @@ def ProcessFolder(path_to_folder, path_to_destination=None):
 
 def main():
     #srt2txt("./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.srt", "./Bake Faster with Blender 2.80 [rrUWC6vKQaQ].en.txt")
-    ProcessFolder("./",'./Processed')
+    process_folder("./",'./Processed')
 
     
 
